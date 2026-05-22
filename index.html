@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silv Matcha</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/bold/style.css" />
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/duotone/style.css" />
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/light/style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+
+
+    <link rel="shortcut icon" href="./img/SILV_MATCHA.webp" type="image/x-icon">
+
+    <link rel="stylesheet" href="./CSS/home.css">
+    <link rel="stylesheet" href="./CSS/tentang.css">
+    <link rel="stylesheet" href="./CSS/menu.css">
+    <link rel="stylesheet" href="./CSS/lokasi.css">
+    <link rel="stylesheet" href="./CSS/kontak.css">
+    <link rel="stylesheet" href="./CSS/01_HomeResp.css">
+    <link rel="stylesheet" href="./CSS/02_TentResp.css">
+    <link rel="stylesheet" href="./CSS/03_MenResp.css">
+    <link rel="stylesheet" href="./CSS/04_LokResp.css">
+    <link rel="stylesheet" href="./CSS/05_KonResp.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<!-- 
+<style>
+    html {
+        user-select: none;
+    }
+</style> -->
+
+<body>
+    <header>
+        <div class="SILV">
+            <i class="ph-duotone ph-tea-bag" style="scale: 1.9;"></i>
+            <h2>
+                <a href="#HOME">Silv Matcha</a>
+            </h2>
+        </div>
+
+        <input type="checkbox" id="menuToggle" class="MENU-CHECKBOX">
+        <label for="menuToggle" class="MENU-TOGGLE" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav id="navbar">
+            <ul class="LINKNAV">
+                <li>
+                    <a href="#HOME" onclick="document.getElementById('menuToggle').checked = false">Home</a>
+                </li>
+                <li>
+                    <a href="#TENTANG" onclick="document.getElementById('menuToggle').checked = false">About</a>
+                </li>
+                <li>
+                    <a href="#MENU" onclick="document.getElementById('menuToggle').checked = false">Menu</a>
+                </li>
+                <li>
+                    <a href="#LOKASI" onclick="document.getElementById('menuToggle').checked = false">Location</a>
+                </li>
+                <li>
+                    <a href="#KONTAK" onclick="document.getElementById('menuToggle').checked = false">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="HOME">
+        <div class="BOX1">
+            <!-- <img src="./img/mATCHA.webp" alt=""> -->
+            <!-- <h1>
+                    Silvy Matcha
+                </h1> -->
+            <h3  data-aos="zoom-in-up">
+                Rasa Autentik <br> Sajian Menarik
+            </h3>
+            <p  data-aos="zoom-in-up">
+                Nikmati sensasi Matcha autentik dengan resep rahasia yang menyegarkan hari-harimu. Dibuat dengan
+                cinta untuk para pecinta teh hijau sejati. Rasakan nikmatnya untuk rutinitas.
+            </p>
+
+            <div class="TOMBOLLAH">
+                <a class="JELAJAHI"  data-aos="fade-up" href="#MENU">Jelajahi</a>
+                <a class="HUBUNGI" data-aos="fade-up" href="#KONTAK">Hubungi</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="TENTANG">
+        <div data-aos="fade-up" class="JUDUL">
+            <h1>About</h1>
+        </div>
+        <div class="KOPER1">
+            <div class="konten">
+
+                <h1 data-aos="fade-right">Matcha & Chill
+                    <hr style="width: 60%; border: 2px solid var(--KOLOR4); margin: 5px 0 0 1px;">
+                </h1>
+
+                <p data-aos="fade-right">
+                    Berawal dari kecintaan kami pada teh hijau, Silv Matcha hadir untuk memberikan pengalaman minum
+                    matcha autentik yang menyegarkan. Kami percaya bahwa setiap gelas matcha harus dibuat dengan bahan
+                    berkualitas dan resep yang sempurna. Kami selalu menggunakan bahan pilihan yang berkualitas.
+                </p>
+                <div data-aos="fade-right" class="QUOTE">
+                    <i class="ph-fill ph-quotes"></i>
+                    "Kesegaran asli matcha dalam setiap aktivitas harianmu."
+                </div>
+
+            </div>
+
+            <div  data-aos="fade-up-left" class="foto-box">
+                <img src="img/SILV_MATCHA.webp" alt="Matcha">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="MENU">
+        <h1 data-aos="fade-up">Our Menu</h1>
+
+        <div>
+            <div data-aos="fade-right" class="SUBJUDUL">
+                <h1>Original Menu
+                    <hr>
+                </h1>
+            </div>
+            <div class="MENUOR">
+                <div data-aos="fade-up" data-aos-delay="100" class="MB" id="MB">
+                    <img src="./MenuImg/01_PureMatcha.webp" alt="">
+                    <div>
+                        <h2>Pure Matcha</h2>
+                        <p>Pure Bubuk Matcha, Air, Es (Sugar / Non Sugar)</p>
+                        <h3>Rp 15.000</h3>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200" class="MB" id="MB2">
+                    <img src="./MenuImg/02_Matcha_Latte.webp" alt="">
+                    <div>
+                        <h2>Matcha Latte</h2>
+                        <p>Bubuk Matcha, Susu UHT, SKM, Es</p>
+                        <h3>Rp 20.000</h3>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="300" class="MB" id="MB3">
+                    <img src="./MenuImg/03_CoconutMatcha.webp" alt="">
+                    <div>
+                        <h2>Coconut Matcha</h2>
+                        <p>Bubuk Matcha, Air Kelapa, SKM, Creamer, Es</p>
+                        <h3>Rp 21.000</h3>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="400" class="MB" id="MB4">
+                    <img src="./MenuImg/04_OatSideMatcha.webp" alt="">
+                    <div>
+                        <h2>Oatside Matcha</h2>
+                        <p>Bubuk Matcha, Oat Milk, SKM, Es)</p>
+                        <h3>Rp 15.000</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================WIWOK DETOK================ -->
+        <br><br><br>
+        <div>
+            <div data-aos="fade-right" class="SUBJUDUL">
+                <h1>Speciality Matcha
+                    <hr>
+                </h1>
+            </div>
+            <div class="MENUOR">
+                <div data-aos="fade-up" data-aos-delay="100" class="MB" id="MB">
+                    <img src="./MenuImg/05_CheeseMatcha.webp" alt="">
+                    <div>
+                        <h2>Cheese Matcha</h2>
+                        <p>Bubuk Matcha, Susu UHT, SKM, Cheese Foam, Creamer, Es</p>
+                        <h3>Rp 25.000</h3>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200" class="MB" id="MB2">
+                    <img src="./MenuImg/06_MatchaCookies.webp" alt="">
+                    <div>
+                        <h2>Matcha Cookies</h2>
+                        <p>Bubuk Matcha, Susu UHT, SKM, Oreo Cookies, Creamer, Es</p>
+                        <h3>Rp 25.000</h3>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="300" class="MB" id="MB3">
+                    <img src="./MenuImg/07_CaramelMatcha.webp" alt="">
+                    <div>
+                        <h2>Caramel Matcha</h2>
+                        <p>Bubuk Matcha, Susu UHT, SKM, Sauce Caramel, Creamer, Es</p>
+                        <h3>Rp 25.000</h3>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="400" class="MB" id="MB4">
+                    <img src="./MenuImg/09_StrawberryMatcha.webp" alt="">
+                    <div>
+                        <h2>Strawberry Matcha</h2>
+                        <p>Bubuk Matcha, Susu UHT, SKM, Sauce Strawberry, Creamer, Es</p>
+                        <h3>Rp 28.000</h3>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- ================WIWOK DETOK================ -->
+        <br><br><br>
+        <div>
+            <div data-aos="fade-right" class="SUBJUDUL">
+                <h1>Non Matcha
+                    <hr>
+                </h1>
+            </div>
+            <div class="MENUOR">
+                <div data-aos="fade-up" data-aos-delay="100" class="MB" id="MB">
+                    <img src="./MenuImg/05_CheeseMatcha.webp" alt="">
+                    <div>
+                        <h2>Creamy Oreo</h2>
+                        <p>Oreo Cookies, Susu UHT, SKM, Creamer, Es</p>
+                        <h3>Rp 17.000</h3>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200" class="MB" id="MB2">
+                    <img src="./MenuImg/06_MatchaCookies.webp" alt="">
+                    <div>
+                        <h2>Caramel Latte</h2>
+                        <p>Sauce Caramel, Susu UHT, Gula Cair, Es</p>
+                        <h3>Rp 20.000</h3>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="300" class="MB" id="MB3">
+                    <img src="./MenuImg/07_CaramelMatcha.webp" alt="">
+                    <div>
+                        <h2>Strawberry Latte</h2>
+                        <p>Sauce Strawberry, Susu UHT, Gula Cair, Es</p>
+                        <h3>Rp 20.000</h3>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="400" class="MB" id="MB4">
+                    <img src="./MenuImg/09_StrawberryMatcha.webp" alt="">
+                    <div>
+                        <h2>Blueberry Latte</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, culpa?</p>
+                        <h3>Rp 28.000</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--!!!! BATAS -->
+    <section id="LOKASI">
+        <div data-aos="fade-up" class="JUDUL">
+            <h1>Our Location</h1>
+        </div>
+        <div class="LOKBOX">
+            <div data-aos="fade-right" class="LOCARD">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.430644570757!2d98.65155907454387!3d3.567647750438471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30312f0020e81a99%3A0xc17ab412a8a66525!2sSilv%20Matcha!5e1!3m2!1sid!2sid!4v1776867572079!5m2!1sid!2sid"
+                    allowfullscreen="" loading="lazy" width="600" height="450" style="border:0;"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- <h2>Lokasi Kami :</h2> -->
+                <div class="ALAMAT">
+                    <i class="ph-duotone ph-map-pin-line"></i>
+                    <p>Jl. Dr Mansyur, Padang Bulan, Kec. Medan Baru, Kota Medan Sumatera Utara</p>
+                </div>
+                <div class="WAKTU">
+                    <i class="ph-duotone ph-clock"></i>
+                    <p>12.00 - 20.00</p>
+                </div>
+                <div class="DETLOK">
+                    <h3>Depan Metro Swalayan</h3>
+                </div>
+            </div>
+            <div data-aos="fade-left" class="LOCARD">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4023.4717057470457!2d98.67899636658365!3d3.5891681065972536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303131c8f7efe9f5%3A0x239b95594d7294c8!2sJl.%20Perniagaan%20No.2%2C%20Kesawan%2C%20Kec.%20Medan%20Bar.%2C%20Kota%20Medan%2C%20Sumatera%20Utara%2020231!5e1!3m2!1sid!2sid!4v1779273591183!5m2!1sid!2sid"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- <h2>Lokasi Kami :</h2> -->
+                <div class="ALAMAT">
+                    <i class="ph-duotone ph-map-pin-line"></i>
+                    <p>Jl. Perniagaan No.2, Kesawan, Kec. Medan Baru, Kota Medan, Sumatera Utara </p>
+                </div>
+                <div class="WAKTU">
+                    <i class="ph-duotone ph-clock"></i>
+                    <p>12.00 - 20.00 (Setiap Hari Minggu)</p>
+                </div>
+                <div class="DETLOK">
+                    <h3>Depan Toko Surabaya</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="KONTAK">
+        <div data-aos="fade-up" class="JUDUL">
+            <h1>Contact</h1>
+        </div>
+        <div class="BOXUTAMA">
+            <div data-aos="fade-right" class="BOXXXXX1">
+                <h3 class="JUDUL_PESAN">
+                    <i class="ph-duotone ph-link-simple"></i>
+                    Link Resmi Kami
+                </h3>
+                <a target="_blank" href="https://www.instagram.com/silvmatcha1?igsh=MW05d2dhOWF6Mnp1eA=="
+                    class="ELSOSMED">
+                    <div class="SOSCON"><i class="ph-bold ph-instagram-logo"></i></div>
+                    <span class="SOSKAL">IG</span>
+                </a>
+                <a target="_blank" href="https://www.tiktok.com/@silvmatcha?_r=1&_t=ZS-96W3w0iyTBN" class="ELSOSMED">
+                    <div class="SOSCON"><i class="ph-bold ph-tiktok-logo"></i></div>
+                    <span class="SOSKAL">TIKTOK</span>
+                </a>
+                <a target="_blank"
+                    href="https://gofood.co.id/medan/restaurant/silv-matcha-jl-dr-mansyur-depan-metro-f838d2eb-805e-424e-9554-bf1b1bf0c34f"
+                    class="ELSOSMED">
+                    <div class="SOSCON"><i class="ph-bold ph-fork-knife"></i></div>
+                    <span class="SOSKAL">GoFood</span>
+                </a>
+            </div>
+            <div data-aos="fade-left" class="BOXXXXX2">
+                <h3 class="JUDUL_PESAN">
+                    <i class="ph-duotone ph-whatsapp-logo"></i>
+                    Kirim Pesan WhatsApp
+                </h3>
+                <form action="">
+                    <div class="BUNGKUSINP">
+                        <i class="ph-light ph-user-circle"></i>
+                        <input type="text" placeholder="Ketik Nama Kamu" required name="" id="NAMA">
+                    </div>
+                    <div class="BUNGKUSINP">
+                        <i class="ph-light ph-chat-text"></i>
+                        <textarea placeholder="Ketik Pesan Kamu" cols="100" rows="50" required name=""
+                            id="PESAN"></textarea>
+                    </div>
+                    <button type="submit">
+                        KIRIM &nbsp; <i class="ph-duotone ph-paper-plane-tilt"></i>
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <footer data-aos="fade-up">
+        <div class="FOOTER-KOPER">
+            <!-- Brand Column -->
+            <div class="FOOTER-BOX BRAND">
+                <div class="FOOTER-BRAND-TITLE">
+                    <i class="ph-duotone ph-tea-bag"></i>
+                    <h3>Silv Matcha</h3>
+                </div>
+                <p class="FOOTER-DESC">
+                    Menyajikan kebahagiaan rasa Matcha Jepang premium yang autentik, segar, dan menyehatkan di setiap
+                    tegukan Anda.
+                </p>
+                <div class="FOOTER-MEDSOS">
+                    <a target="_blank" href="https://www.instagram.com/silvmatcha1?igsh=MW05d2dhOWF6Mnp1eA=="
+                        aria-label="Instagram"><i class="ph-bold ph-instagram-logo"></i></a>
+                    <a target="_blank" href="https://www.tiktok.com/@silvmatcha?_r=1&_t=ZS-96W3w0iyTBN"
+                        aria-label="TikTok"><i class="ph-bold ph-tiktok-logo"></i></a>
+                    <a target="_blank"
+                        href="https://gofood.co.id/medan/restaurant/silv-matcha-jl-dr-mansyur-depan-metro-f838d2eb-805e-424e-9554-bf1b1bf0c34f"
+                        aria-label="GoFood"><i class="ph-bold ph-fork-knife"></i></a>
+                </div>
+            </div>
+
+            <!-- Address Column -->
+            <div class="FOOTER-BOX ALAMAT-FOOTER">
+                <h4>Cabang Utama</h4>
+                <div class="FOOTER-DETAIL-ITEM">
+                    <i class="ph-duotone ph-map-pin"></i>
+                    <p>Jl. Dr Mansyur, Padang Bulan, Kec. Medan Baru, Kota Medan (Depan Metro Swalayan)</p>
+                </div>
+                <div class="FOOTER-DETAIL-ITEM">
+                    <i class="ph-duotone ph-clock"></i>
+                    <p>Buka Setiap Hari: 12.00 - 20.00 WIB</p>
+                </div>
+            </div>
+
+            <!-- Secondary Branch / Event Column -->
+            <div class="FOOTER-BOX EVENTS-FOOTER">
+                <h4>Cabang CFD</h4>
+                <div class="FOOTER-DETAIL-ITEM">
+                    <i class="ph-duotone ph-map-pin"></i>
+                    <p>Jl. Perniagaan No.2, Kesawan, Kec. Medan Barat, Kota Medan (Depan Toko Surabaya)</p>
+                </div>
+                <div class="FOOTER-DETAIL-ITEM">
+                    <i class="ph-duotone ph-clock"></i>
+                    <p>Hari Minggu (CFD): 06.00 - 11.00 WIB</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="FOOTER-BAWAH">
+            <p>© <span id="year">2026</span> Silv Matcha - All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+    <script src="./JS/logic.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: false,
+            mirror: true,
+            
+        });
+    </script>
+
+</body>
+
+</html>

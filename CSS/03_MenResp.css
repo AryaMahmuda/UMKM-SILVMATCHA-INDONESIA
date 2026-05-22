@@ -1,0 +1,181 @@
+/* 03_MenResp.css - Responsive Styles for Menu Section */
+
+:root {
+    --KOLOR1: #34622e;
+    --KOLOR2: #84b179;
+    --KOLOR3: #A2cB8b;
+    --KOLOR4: #C7EABB;
+    --KOLOR5: #E8F5BD;
+    --KOLOR6: #8a94a2;
+    --KOLOR7: #63e143;
+    --KOLOR8: #539d49;
+}
+
+/* Base adjustment for sections wrapper on Desktop & Wide Viewports */
+#MENU {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 100px 15% 120px 15%;
+}
+
+.MENUOR {
+    width: 100%;
+    box-sizing: border-box;
+    grid-template-columns: repeat(4, 1fr) !important;
+    grid-template-areas: none !important;
+}
+
+/* Desktop M/L and standard overrides to bypass area templates */
+.MB {
+    grid-area: auto !important;
+}
+
+/* Tablet screen viewports (e.g. Max-width <= 1024px) -> 3 Columns */
+@media (max-width: 1024px) {
+    #MENU {
+        padding: 80px 8% 100px 8%;
+    }
+    
+    .SUBJUDUL {
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+        text-align: left !important;
+    }
+    
+    .SUBJUDUL h1 {
+        font-size: 34px !important;
+        text-align: left !important;
+    }
+
+    .SUBJUDUL hr {
+        margin: 10px 0 0 0 !important;
+    }
+    
+    .MENUOR {
+        grid-template-columns: repeat(3, 1fr) !important;
+        grid-template-areas: none !important;
+        gap: 20px;
+    }
+}
+
+/* Medium Tablets & Profile viewports (e.g. Max-width <= 820px) -> 3 Columns / 2 Columns adaptively */
+@media (max-width: 820px) {
+    #MENU {
+        padding: 80px 5% 80px 5%;
+    }
+
+    .SUBJUDUL h1 {
+        font-size: 30px !important;
+    }
+    
+    .MENUOR {
+        grid-template-columns: repeat(3, 1fr) !important;
+        grid-template-areas: none !important;
+        gap: 15px;
+    }
+}
+
+/* Mobile Viewports (e.g. Max-width <= 768px) -> 2 Columns */
+@media (max-width: 768px) {
+    #MENU {
+        padding: 60px 5% 80px 5%;
+        margin-bottom: 100px;
+    }
+    
+    #MENU > h1 {
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+
+    .SUBJUDUL {
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+        text-align: left !important;
+    }
+
+    .SUBJUDUL h1 {
+        font-size: 26px !important;
+        text-align: left !important;
+    }
+    
+    .SUBJUDUL hr {
+        width: 50px !important;
+        margin: 6px 0 0 0 !important;
+    }
+
+    .MENUOR {
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-areas: none !important;
+        gap: 12px;
+    }
+    
+    .MB {
+        border-radius: 12px;
+    }
+    
+    .MB > img {
+        height: 180px; /* Highly detailed scaling of the card display */
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .MB > div {
+        margin-inline: 12px;
+        padding-bottom: 10px;
+    }
+    
+    .MB div > h2 {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .MB div > p {
+        font-size: 13px;
+        margin-top: -10px;
+        line-height: 1.4;
+    }
+    
+    .MB div > h3 {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+}
+
+/* Small Smartphone Viewports (e.g. Max-width <= 480px) -> 2 Columns with compact typography */
+@media (max-width: 480px) {
+    #MENU {
+        padding: 50px 5% 60px 5%;
+        margin-bottom: 60px;
+    }
+    
+    #MENU > h1 {
+        font-size: 32px;
+    }
+
+    .SUBJUDUL h1 {
+        font-size: 22px !important;
+    }
+
+    .MENUOR {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 8px;
+    }
+
+    .MB > img {
+        height: 130px;
+    }
+
+    .MB div > h2 {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    .MB div > p {
+        font-size: 10.5px;
+        margin-top: -8px;
+    }
+
+    .MB div > h3 {
+        font-size: 13px;
+        margin-top: 2px;
+    }
+}

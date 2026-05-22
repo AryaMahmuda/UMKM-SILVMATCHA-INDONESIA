@@ -1,0 +1,261 @@
+/* 05_KonResp.css - Responsive Styles for Contact Section */
+
+:root {
+    --KOLOR1: #34622e;
+    --KOLOR2: #84b179;
+    --KOLOR3: #A2cB8b;
+    --KOLOR4: #C7EABB;
+    --KOLOR5: #E8F5BD;
+    --KOLOR6: #616A76;
+}
+
+/* ========================================================
+   RESPONSIVE DESIGN FOR KONTAK (CONTACT) SECTION
+   ======================================================== */
+
+/* Narrower Desktop Viewports (e.g., Max-width <= 1100px) */
+@media (max-width: 1100px) {
+    #KONTAK {
+        padding: 80px 10% !important;
+    }
+
+    .BOXUTAMA {
+        gap: 50px !important;
+    }
+
+    .JUDUL>h1 {
+        font-size: 42px !important;
+        margin-bottom: 60px !important;
+    }
+}
+
+/* Medium Tablets & iPads (e.g., Max-width <= 820px) -> Trigger Stacking Layout */
+@media (max-width: 820px) {
+    #KONTAK {
+        padding: 80px 5% 60px 5% !important;
+    }
+
+    .JUDUL>h1 {
+        font-size: 38px !important;
+        margin-bottom: 40px !important;
+    }
+
+    /* Wrap outer containers vertically */
+    .BOXUTAMA {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 40px !important;
+        width: 100% !important;
+    }
+
+    /* --- "Link Resmi Kami" Container with Horizontal Sibling Links --- */
+    .BOXXXXX1 {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        width: 100% !important;
+        gap: 15px !important;
+        justify-content: flex-start !important;
+        background-color: transparent !important;
+        padding: 0 !important;
+        border: none !important;
+    }
+
+    /* Ensure title remains strictly left-aligned and spans 100% on tablet to keep line-broken layout */
+    .BOXXXXX1 .JUDUL_PESAN {
+        width: 100% !important;
+        text-align: left !important;
+        justify-content: flex-start !important;
+        align-self: flex-start !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* Scale Social Media Cards horizontally to form 1 Row of 3 Columns */
+    .BOXXXXX1 .ELSOSMED {
+        flex: 1 1 0px !important; /* Distribute horizontal size evenly */
+        min-width: 0 !important;
+        max-width: 100% !important;
+        width: auto !important;
+        height: 60px !important;
+        padding: 5px !important;
+        margin-bottom: 0 !important; /* Clear bottom margins */
+        border-radius: 40px !important;
+        justify-content: flex-start !important;
+        box-sizing: border-box !important;
+    }
+
+    .BOXXXXX1 .SOSCON {
+        width: 48px !important;
+        height: 48px !important;
+        font-size: 24px !important;
+        flex-shrink: 0 !important;
+    }
+
+    .BOXXXXX1 .SOSKAL {
+        padding-left: 12px !important;
+        font-size: 16px !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+    }
+
+    /* --- "Kirim Pesan WhatsApp" Form Container --- */
+    .BOXXXXX2 {
+        border-left: none !important; /* Remove line separators in vertical scroll context */
+        padding-left: 0 !important;
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+
+    .BOXXXXX2 .JUDUL_PESAN {
+        text-align: left !important;
+        justify-content: flex-start !important;
+        align-self: flex-start !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* --- Footer Tablet Responsiveness --- */
+    .FOOTER-KOPER {
+        flex-direction: column !important;
+        gap: 35px !important;
+        padding: 50px 8% !important;
+    }
+
+    .FOOTER-BOX {
+        gap: 12px !important;
+    }
+
+    .FOOTER-MEDSOS {
+        margin-top: 5px !important;
+    }
+}
+
+/* Small Smartphone Viewports (e.g., Max-width <= 480px) -> Refined Compact Typography & Layout */
+@media (max-width: 480px) {
+    #KONTAK {
+        padding: 65px 5% 50px 5% !important;
+    }
+
+    #KONTAK .JUDUL h1 {
+        font-size: 32px !important;
+        margin-bottom: 30px !important;
+    }
+
+    .BOXUTAMA {
+        gap: 30px !important;
+    }
+
+    .BOXXXXX1 {
+        gap: 10px !important;
+    }
+
+    .BOXXXXX1 .JUDUL_PESAN {
+        font-size: 22px !important;
+        margin-bottom: 12px !important;
+        gap: 10px !important;
+    }
+
+    .BOXXXXX1 .JUDUL_PESAN i {
+        font-size: 28px !important;
+    }
+
+    /* Scale Social Media Link Cards down beautifully to fit smaller devices */
+    .BOXXXXX1 .ELSOSMED {
+        height: 52px !important;
+        padding: 4px !important;
+        border-radius: 30px !important;
+    }
+
+    .BOXXXXX1 .SOSCON {
+        width: 42px !important;
+        height: 42px !important;
+        font-size: 20px !important;
+    }
+
+    .BOXXXXX1 .SOSKAL {
+        padding-left: 8px !important;
+        font-size: 13px !important;
+    }
+
+    /* Kirim Pesan Form Title and Structure */
+    .BOXXXXX2 .JUDUL_PESAN {
+        font-size: 22px !important;
+        margin-bottom: 12px !important;
+        gap: 10px !important;
+    }
+
+    .BOXXXXX2 .JUDUL_PESAN i {
+        font-size: 28px !important;
+    }
+
+    /* Compact inputs styling to prevent off-box viewport clipping */
+    form {
+        gap: 15px !important;
+    }
+
+    .BUNGKUSINP i {
+        left: 15px !important;
+        font-size: 22px !important;
+    }
+
+    .BUNGKUSINP input {
+        height: 50px !important;
+        padding: 8px 15px 8px 48px !important;
+        font-size: 15px !important;
+        border-radius: 12px !important;
+    }
+
+    .BUNGKUSINP textarea {
+        height: 140px !important;
+        padding: 14px 15px 14px 48px !important;
+        font-size: 15px !important;
+        border-radius: 12px !important;
+    }
+
+    .BUNGKUSINP:nth-child(2) > i {
+        top: 14px !important;
+    }
+
+    form button {
+        padding: 12px !important;
+        font-size: 17px !important;
+        border-radius: 12px !important;
+        margin-top: 5px !important;
+    }
+
+    /* --- Footer Mobile Compactness --- */
+    .FOOTER-KOPER {
+        padding: 40px 6% !important;
+        gap: 30px !important;
+    }
+
+    .FOOTER-BRAND-TITLE h3 {
+        font-size: 22px !important;
+    }
+
+    .FOOTER-DESC {
+        font-size: 14px !important;
+    }
+
+    .FOOTER-BOX h4 {
+        font-size: 16px !important;
+    }
+
+    .FOOTER-DETAIL-ITEM i {
+        font-size: 20px !important;
+    }
+
+    .FOOTER-DETAIL-ITEM p {
+        font-size: 13.5px !important;
+    }
+
+    .FOOTER-BAWAH {
+        padding: 18px 5% !important;
+    }
+
+    .FOOTER-BAWAH p {
+        font-size: 13px !important;
+    }
+}

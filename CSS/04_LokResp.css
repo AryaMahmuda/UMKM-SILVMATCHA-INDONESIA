@@ -1,0 +1,200 @@
+/* 04_LokResp.css - Responsive Styles for Location Section */
+
+:root {
+    --KOLOR1: #34622e;
+    --KOLOR2: #84b179;
+    --KOLOR3: #A2cB8b;
+    --KOLOR4: #C7EABB;
+    --KOLOR5: #E8F5BD;
+    --KOLOR6: #616A76;
+}
+
+/* Base adjustment for wider viewports to keep everything bounded beautifully */
+#LOKASI {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* ========================================================
+   RESPONSIVE DESIGN FOR LOKASI (LOCATION) SECTION
+   ======================================================== */
+
+/* Narrower Desktop & Medium/Large Viewports (e.g., Max-width <= 1200px) */
+@media (max-width: 1200px) {
+    #LOKASI {
+        padding: 80px 8% 100px 8% !important;
+    }
+
+    .LOKBOX {
+        gap: 30px !important; /* Slightly decrease gap to fit securely on lower resolutions */
+        max-width: 100%;
+    }
+
+    .LOCARD {
+        width: 50% !important;
+    }
+}
+
+/* Large Tablets & Medium Display Adjustments (e.g., Max-width <= 1024px) */
+@media (max-width: 1024px) {
+    #LOKASI {
+        padding: 80px 6% 80px 6% !important;
+    }
+
+    #LOKASI .JUDUL h1 {
+        font-size: 44px !important;
+        margin-bottom: 45px !important;
+    }
+
+    .LOKBOX {
+        gap: 20px !important;
+    }
+
+    .ALAMAT, .WAKTU {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
+
+/* Portrait Tablets & Medium Devices (e.g., Max-width <= 820px) -> Still 2 columns but extremely optimized */
+@media (max-width: 820px) {
+    #LOKASI {
+        padding: 80px 5% 80px 5% !important;
+    }
+
+    #LOKASI .JUDUL h1 {
+        font-size: 38px !important;
+        margin-bottom: 40px !important;
+    }
+
+    .LOKBOX {
+        gap: 15px !important;
+    }
+
+    .LOCARD {
+        border-radius: 18px !important;
+        padding: 12px !important;
+    }
+
+    .LOCARD iframe {
+        height: 220px !important;
+    }
+
+    .ALAMAT {
+        padding: 20px 15px 5px 15px !important;
+        gap: 10px !important;
+    }
+
+    .WAKTU {
+        padding: 10px 15px 15px 15px !important;
+        gap: 10px !important;
+    }
+
+    .ALAMAT i, .WAKTU i {
+        font-size: 26px !important;
+    }
+
+    .ALAMAT p, .WAKTU p {
+        font-size: 15px !important;
+    }
+
+    .DETLOK h3 {
+        font-size: 18px !important;
+    }
+}
+
+/* Mobile Viewports (e.g., Max-width <= 768px) -> Enters 1-Column Stacking Flow */
+@media (max-width: 768px) {
+    #LOKASI {
+        padding: 60px 5% 70px 5% !important;
+    }
+
+    #LOKASI .JUDUL h1 {
+        font-size: 34px !important;
+        margin-bottom: 30px !important;
+    }
+
+    .LOKBOX {
+        flex-direction: column !important; /* Stack vertically */
+        align-items: center !important;
+        gap: 30px !important; /* Elegant spacing between stacked location cards */
+        width: 100%;
+    }
+
+    .LOCARD {
+        width: 100% !important; /* Cards span full width of their bounded container */
+        max-width: 500px; /* Highly polished limit so it doesn't look stretched on landscape smartphones */
+        border-radius: 16px !important;
+    }
+
+    .LOCARD iframe {
+        height: 240px !important;
+    }
+
+    .ALAMAT {
+        padding: 22px 18px 5px 18px !important;
+        gap: 12px !important;
+    }
+
+    .WAKTU {
+        padding: 10px 18px 15px 18px !important;
+        gap: 12px !important;
+    }
+
+    .ALAMAT i, .WAKTU i {
+        font-size: 24px !important;
+    }
+
+    .ALAMAT p, .WAKTU p {
+        font-size: 14.5px !important;
+    }
+
+    .DETLOK h3 {
+        font-size: 17px !important;
+    }
+}
+
+/* Small Smartphone Viewports (e.g., Max-width <= 480px) */
+@media (max-width: 480px) {
+    #LOKASI {
+        padding: 50px 5% 60px 5% !important;
+    }
+
+    #LOKASI .JUDUL h1 {
+        font-size: 28px !important;
+        margin-bottom: 25px !important;
+    }
+
+    .LOKBOX {
+        gap: 24px !important;
+    }
+
+    .LOCARD iframe {
+        height: 190px !important; /* Compact map display on very small handset screens */
+        min-height: 180px !important;
+    }
+
+    .ALAMAT {
+        padding: 15px 10px 5px 10px !important;
+        gap: 10px !important;
+    }
+
+    .WAKTU {
+        padding: 8px 10px 12px 10px !important;
+        gap: 10px !important;
+    }
+
+    .ALAMAT i, .WAKTU i {
+        font-size: 20px !important;
+    }
+
+    .ALAMAT p, .WAKTU p {
+        font-size: 13px !important;
+        line-height: 1.5 !important;
+    }
+
+    .DETLOK h3 {
+        font-size: 15px !important;
+        margin-top: 5px !important;
+    }
+}

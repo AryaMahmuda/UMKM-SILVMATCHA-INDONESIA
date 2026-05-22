@@ -1,0 +1,120 @@
+:root {
+    --KOLOR1: #34622e;
+    --KOLOR2: #84b179;
+    --KOLOR3: #A2cB8b;
+    --KOLOR4: #C7EABB;
+    --KOLOR5: #E8F5BD;
+    --KOLOR6: #616A76;
+}
+
+#LOKASI {
+    min-height: auto;
+    padding: 100px 15%;
+    background-color: var(--KOLOR1);
+    font-family: 'Barlow Semi Condensed', Arial, Helvetica, sans-serif;
+
+    scroll-margin-top: -80px;
+}
+
+#LOKASI .JUDUL h1 {
+    color: #f8f8f8;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.LOKBOX {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.LOCARD {
+    background-color: white;
+    border-radius: 24px;
+    width: 50%;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border: 1px solid #f0f0f0;
+
+    padding: 16px;
+}
+
+.LOCARD:hover {
+    transform: translateY(-10px);
+}
+
+.LOCARD iframe {
+    width: 100%;
+    height: 250px;
+    border: none;
+    border-radius: 16px;
+}
+
+.ALAMAT {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 30px 30px 5px 30px;
+}
+
+
+
+.ALAMAT i {
+    font-size: 32px;
+    color: var(--KOLOR1);
+}
+
+.ALAMAT p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--KOLOR6);
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+.WAKTU {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 10px 30px 15px 30px;
+}
+
+.WAKTU p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--KOLOR6);
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.6;
+}
+.WAKTU i {
+    font-size: 32px;
+    color: var(--KOLOR1);
+}
+
+.DETLOK {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.DETLOK h3 {
+   
+    font-size: 20px;
+    color: var(--KOLOR1);
+    margin: 10px 0 0 0;
+    text-align: center;
+    
+
+    font-family: 'Barlow Semi Condensed', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
