@@ -14,6 +14,16 @@
     box-sizing: border-box;
 }
 
+
+html, body, * {
+    scrollbar-width: none !important; /* Firefox */
+    -ms-overflow-style: none !important; /* IE dan Edge */
+}
+
+::-webkit-scrollbar, *::-webkit-scrollbar {
+    display: none !important; /* Chrome, Safari, dan Opera */
+}
+
 html, body {
     width: 100% !important;
     max-width: 100% !important;
